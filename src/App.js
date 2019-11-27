@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ContactForm from './components/Contact.js';
+import Skills from './components/Skills.js';
+import Projects from './components/Projects.js';
+import ActivityGraph from './components/AcivityGraph.js'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='landingPage'>
+      <h1>Hannah Tuttle</h1>
+    <div><h4>Projects</h4></div>
+    <div><h4>About Me</h4></div>
+    <div><h4>Skills</h4></div>
+    <div><h4>Contact</h4></div>
+    {/* <ContactForm/> */}
+    {/* <Skills/> */}
+    {/* <Projects/> */}
+    <ActivityGraph/>
     </div>
   );
 }
