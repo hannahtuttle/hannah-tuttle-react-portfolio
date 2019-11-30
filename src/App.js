@@ -4,6 +4,7 @@ import ContactForm from './components/Contact.js';
 import Skills from './components/Skills.js';
 import Projects from './components/Projects.js';
 import ActivityGraph from './components/AcivityGraph.js'
+import AboutMe from './components/AboutMe.js'
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
     {/* <ContactForm/> */}
     {/* <Skills/> */}
     {/* <Projects/> */}
-    <ActivityGraph/>
+    {/* <ActivityGraph/> */}
+    <AboutMe/>
     </div>
   );
 }
