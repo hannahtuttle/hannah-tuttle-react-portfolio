@@ -46,7 +46,7 @@ const Projects = () => {
            </ul>
            <p>You can view the website  <a href='https://guider-app.madisonmckown.now.sh/homepage'>here</a> or checkout the repository <a href='https://github.com/guidr-project/GUIDR-Backend'>here</a>.</p>
        </div>
-       <p>You can checkout my other projects on <a href='https://github.com/hannahtuttle?tab=repositories'>GitHub</a>.</p>
+       
         </>
     )
 }
