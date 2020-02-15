@@ -14,6 +14,7 @@ const Skills = () => {
             <li>React</li>
             <li>React-Native</li>
             <li>Node/Express</li>
+            <li>Python</li>
         </ul>
         </>
     )
