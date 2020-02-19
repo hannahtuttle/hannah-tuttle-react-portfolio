@@ -12,7 +12,7 @@ const AboutMe = () => {
         <h1>Hannah Tuttle</h1>
         <p>Full Stack Web Developer with a passion for problem solving and continuous learning.</p> 
         </div>
-        <img className='image' src={photo} alt='profile photo' />
+        {/* <img className='image' src={photo} alt='profile photo' /> */}
         </div>
         {/* <p>I have extensive training and experience coding in React on the front-end and Node/express on the backend. My latest project has been in React-native, which I taught myself. In all of my previous work places I have risen to leadership positions. experience has been in leadership and managment. I have gained experience working in all size teams and know the importance of good communication. I love being in field that requires constant learning and self motivation.</p> */}
 
