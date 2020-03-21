@@ -59,6 +59,7 @@
   border-width: 3px;
   border-color: crimson;
   border-style: solid;
+  text-align: left;
   /* align-self: flex-end; */
 }
 
