@@ -4,6 +4,7 @@ import './nav.scss';
 import {Route, Link} from 'react-router-dom';
 import Home from './components/homepage.js';
 import ContactForm from './components/Contact.js';
+import ProjectGallery from './components/galleryProjects.js'
 import Skills from './components/Skills.js';
 import Projects from './components/Projects.js';
 import ActivityGraph from './components/AcivityGraph.js'
