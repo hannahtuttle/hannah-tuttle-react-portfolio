@@ -9,27 +9,6 @@ import plants from '../assets/green.jpg'
 
 const ProjectGallery = () => {
 
-// code for react grid gallery    
-//     const images = [
-//         {
-//             src: Projects,
-//             thumbnail: food,
-//             thumbnailWidth: 220,
-//             thumbnailHeight: 174,
-//     },
-//     {
-//         src: "../assets/anise-aroma-art.jpg",
-//         thumbnail: Projects,
-//         thumbnailWidth: 320,
-//         thumbnailHeight: 174,
-// },
-// {
-//     src: "../assets/anise-aroma-art.jpg",
-//     thumbnail: Projects,
-//     thumbnailWidth: 320,
-//     thumbnailHeight: 174,
-// }
-// ]
 
 //code for react photo gallery
     // const images = [
@@ -53,17 +32,25 @@ const ProjectGallery = () => {
     //code for my own gallery
     const images = [food, plants, outside]
     class imageGraph {
-        constructor(imgArray){
-            this.imgArray = imgArray,
+        constructor(){
             this.possibleNodes = {}
         }
 
-        findPossibleNodes = (images) => {
-            let count = 0
-            let posibleStartingNodes = []
-            while (count < images.length){
-                
+        findPossibleNodes(images){
+           for (let i = 0; i < images.length; i++){
+               this.possibleNodes[i] = [[images[i]]]
+           }
+          for (let i =0; i <images.length; i++){
+            if(this.possibleNodes[i] && i !== images.length - 1){
+              let temp = [images[i]]
+              for (let j = i+1; j <images.length - i; j++){
+                temp.push(images[j])
+                console.log('temp', temp)
+                this.possibleNodes[i].push(temp)
+                console.log('possible nodes',this.possibleNodes)
+              }
             }
+          }
         }
     }
 
