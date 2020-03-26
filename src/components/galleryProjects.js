@@ -32,23 +32,40 @@ const ProjectGallery = () => {
 // ]
 
 //code for react photo gallery
-    const images = [
-        {
-            src: food,
-            width: 220,
-            height: 174,
-    },
-    {
-        src: plants,
-        width: 220,
-        height: 174,
-},
-{
-    src: outside,
-    width: 220,
-    height: 174,
-}
-]
+    // const images = [
+    // {
+    //     src: food,
+    //     width: 220,
+    //     height: 174,
+    // },
+    // {
+    //     src: plants,
+    //     width: 220,
+    //     height: 174,
+    // },
+    // {
+    //     src: outside,
+    //     width: 220,
+    //     height: 174,
+    // }
+    // ]
+
+    //code for my own gallery
+    const images = [food, plants, outside]
+    class imageGraph {
+        constructor(imgArray){
+            this.imgArray = imgArray,
+            this.possibleNodes = {}
+        }
+
+        findPossibleNodes = (images) => {
+            let count = 0
+            let posibleStartingNodes = []
+            while (count < images.length){
+                
+            }
+        }
+    }
 
 return (
     <>
