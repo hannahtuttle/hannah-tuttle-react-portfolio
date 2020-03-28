@@ -6,6 +6,7 @@ import Skills from './Skills.js';
 import Projects from './Projects.js';
 import ActivityGraph from './AcivityGraph.js'
 import AboutMe from './AboutMe.js'
+import Modals from './projectModals.js'
 
 function Home() {
 
@@ -15,6 +16,7 @@ function Home() {
         {/* <h1>Hannah Tuttle</h1> */}
       <AboutMe/>
       <div className='navBar'>
+
       <div><h4>Projects</h4></div>
       {/* <div><h4>About Me</h4></div> */}
       <div><h4>Skills</h4></div>
