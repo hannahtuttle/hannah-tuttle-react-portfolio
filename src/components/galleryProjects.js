@@ -70,6 +70,7 @@ const ProjectGallery = () => {
 
 return (
     <>
+    <h2>Projects</h2>
     <Gallery photos={images} renderImage={imageRenderer}/>
     </>
 )

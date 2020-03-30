@@ -6,7 +6,6 @@ import Skills from './Skills.js';
 import Projects from './Projects.js';
 import ActivityGraph from './AcivityGraph.js'
 import AboutMe from './AboutMe.js'
-import Modals from './projectModals.js'
 
 function Home() {
 
