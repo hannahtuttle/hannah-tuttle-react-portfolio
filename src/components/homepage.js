@@ -1,11 +1,10 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import ContactForm from './Contact.js';
+// import {Link} from 'react-router-dom';
+// import ContactForm from './Contact.js';
 import ProjectGallery from './galleryProjects.js'
 import Skills from './Skills.js';
-import Projects from './Projects.js';
-import ActivityGraph from './AcivityGraph.js'
 import AboutMe from './AboutMe.js'
+import AboutMe2 from './AboutMe2.js'
 
 function Home() {
 
@@ -19,13 +18,19 @@ function Home() {
       <div><h4>Projects</h4></div>
       {/* <div><h4>About Me</h4></div> */}
       <div><h4>Skills</h4></div>
-      <div><Link to='/contactForm'><h4>Contact</h4></Link></div>
+      <div><h4>Contact</h4></div>
       </div>
       {/* <Projects/> */}
+      {/* <p>________________________________________________________________________________________________</p> */}
       <ProjectGallery/>
       <Skills/>
-      <ActivityGraph/>
+      <AboutMe2/>
       </div>
+      <footer className ='footer'>
+      <p>View my work <a href='https://github.com/hannahtuttle?tab=repositories'>here</a>.</p>
+        <h5>Contact</h5>
+        <p>hannahtuttle28@gmail.com</p>
+      </footer>
       </div>    )
 }
 export default Home;

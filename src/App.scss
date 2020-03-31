@@ -2,43 +2,26 @@
 
 .landingPage {
   text-align: center;
-  /* background-color: #25221e; */
-  /* padding-top: 10px; */
   padding-bottom: 10px;
 }
 .intro {
-  background-color: crimson;
+  background-color: #1B1C1D;
   padding-top: 20%;
   padding-bottom: 20%;
-  /* width: 50%; */
   color: white;
   font-family: 'Vollkorn', serif;
-  /* background-image: url('./assets/mountains2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
-/* .top{
-  display: flex;
-  flex-direction: row;
-} */
-.image {
-  width: 35%;
-  height: 35%;
-  border-radius: 50%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 7%;
-}
+
 .navBar {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  outline: none;
 }
 .projects{
   display: flex;
   padding-left: 2%;
   padding-right: 2%;
-  /* align-items: flex-end; */
 }
 .project-title {
   text-align: left;
@@ -60,6 +43,11 @@
   border-color: crimson;
   border-style: solid;
   text-align: left;
-  /* align-self: flex-end; */
 }
 
+.footer{
+  color: white;
+  background-color: #1B1C1D;
+  margin-top: 5%;
+  padding: 5%
+}

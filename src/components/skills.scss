@@ -1,0 +1,30 @@
+@import '../fonts.scss';
+
+.border_horizontal {
+    margin-top: 5%;
+    border-top: 1px solid #1B1C1D;
+    width: 76%;
+    margin-left: 12%;
+}
+
+.border_v {
+  margin-top: 5%;
+  border-left: 1px solid #1B1C1D;
+  height: 30px;
+  // width: 76%;
+  margin-left: 50%;
+}
+
+.skills_title{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: 'Vollkorn', serif
+}
+
+.list {
+    width: 30%;
+    border-left: 1px solid #1B1C1D;
+    text-align: left;
+    padding-left: 5%;
+    margin-left: 35%;
+}

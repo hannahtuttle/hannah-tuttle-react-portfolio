@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from '../assets/ProfileImage.png';
+// import photo from '../assets/ProfileImage.png';
 import '../App.scss';
 
 

@@ -1,5 +1,5 @@
-import React from 'react'
-//import '../App.css'
+// import React from 'react'
+// import Navigation from './navbar.js';
 
 const projectsObject = {
     'recipeShare': {
@@ -28,27 +28,28 @@ const projectsObject = {
 }
 }
 
-const Projects = (props) => {
+// const Projects = (props) => {
 
-    let title = props.location.title
-    return (
-        <>
-                <h1>{title}</h1>
-                <p>{projectsObject[title].description}</p> 
-                <p>{projectsObject[title].stack}</p>
-                <p>{projectsObject[title].hosted}</p>
-                <p>{projectsObject[title].gitHublink}</p>
-                <ul>
-                    {projectsObject[title].tasks.map(task => {
-                    return <li>{task}</li>
-                    })}
-                </ul>
+//     let title = props.location.title
+//     return (
+//         <>
+//                 <Navigation/>
+//                 <h1>{title}</h1>
+//                 <p>{projectsObject[title].description}</p> 
+//                 <p>{projectsObject[title].stack}</p>
+//                 <p>{projectsObject[title].hosted}</p>
+//                 <p>{projectsObject[title].gitHublink}</p>
+//                 <ul>
+//                     {projectsObject[title].tasks.map(task => {
+//                     return <li>{task}</li>
+//                     })}
+//                 </ul>
        
-        </>
-    )
-}
+//         </>
+//     )
+// }
 
-export default Projects;
+// export default Projects;
 
 
-// export default projectsObject;
+export default projectsObject;

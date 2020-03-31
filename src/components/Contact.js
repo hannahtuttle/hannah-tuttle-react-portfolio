@@ -20,7 +20,7 @@ const ContactForm = () => {
     }
 
     return (
-        <form>
+        <form onSubmit = {onSubmit}>
            <h3>Contact</h3> 
            <label>Name</label>
            <input 

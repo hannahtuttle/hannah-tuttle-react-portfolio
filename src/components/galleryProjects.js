@@ -1,11 +1,11 @@
 import React from 'react'
 // import Gallery from 'react-grid-gallery'
 import Gallery from 'react-photo-gallery'
-import Projects from './Projects.js'
 import SelectedImage from './selectedProjects.js'
 import food from "../assets/anise-aroma-art.jpg"
 import outside from '../assets/landscape.jpg'
 import plants from '../assets/green.jpg'
+import './projects.scss'
 
 
 const ProjectGallery = () => {
@@ -15,19 +15,19 @@ const ProjectGallery = () => {
     const images = [
     {
         src: food,
-        width: 220,
+        width: 200,
         height: 174,
         title: 'recipeShare'
     },
     {
         src: plants,
-        width: 220,
+        width: 200,
         height: 174,
         title: 'Water my plants'
     },
     {
         src: outside,
-        width: 220,
+        width: 200,
         height: 174,
         title: 'GUIDR'
     }
@@ -69,10 +69,13 @@ const ProjectGallery = () => {
     // }
 
 return (
-    <>
-    <h2>Projects</h2>
+    <div>
+        <div className = "border_horizontal"></div>
+        <div className = "border_v"></div>
+        <div className = "border_horizontal"></div>
+    <h2 className = 'project_title'>Projects</h2>
     <Gallery photos={images} renderImage={imageRenderer}/>
-    </>
+    </div>
 )
 }
 export default ProjectGallery;
