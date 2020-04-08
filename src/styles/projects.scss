@@ -80,7 +80,7 @@ a:hover {
     margin-top: 10%;
     margin-left: 10%;
     width: 75%;
-    height: 85%;
+    // height: 85%;
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 2%;
@@ -104,4 +104,29 @@ a:hover {
     
   }
   
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .Modal {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 75%;
+    // height: 85%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    background-color: whitesmoke;
+    outline: none;
+    //border: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+    color:#202020;
+    font-family: 'Vollkorn', serif;
+  }
 }

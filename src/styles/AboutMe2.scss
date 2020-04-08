@@ -71,3 +71,29 @@
     // padding-right: 8%;
 }
 }
+
+@media (max-width: 1024px) {
+  .about_c {
+    display: flex;
+    flex-direction: column;
+    border-right: none;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+}
+  .image {
+    width: 55%;
+    height: 55%;
+    border-radius: 50%;
+    // margin-top: 5%;
+    // margin-bottom: 5%;
+    margin: 0 auto;
+  }
+
+  .description {
+    width: 80%;
+    margin-left: 1%;
+    // padding-right: 8%;
+}
+
+}
