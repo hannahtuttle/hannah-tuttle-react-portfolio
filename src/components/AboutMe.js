@@ -10,7 +10,7 @@ const AboutMe = () => {
         <div className='top'>
         <div className='intro'>
         <h1>Hannah Tuttle</h1>
-        <p>Full Stack Web Developer with a passion for problem solving and continuous learning.</p> 
+        <p className = 'short-intro'>Full Stack Web Developer with a passion for problem solving and continuous learning.</p> 
         </div>
         {/* <img className='image' src={photo} alt='profile photo' /> */}
         </div>

@@ -33,22 +33,25 @@
     font-family: 'Vollkorn', serif;
   }
 
+  @media (max-width: 1024px) {
+      .list {
+          width: 50%;
+          text-align: left;
+          padding-left: 5%;
+          margin-left: 30%;
+      }
+  
+    }
+
 @media (max-width: 580px){
     .list {
-        width: 100%;
+        width: 50%;
+        //border: 1px solid red;
         border-left: none;
         text-align: left;
         padding-left: none;
-        margin-left: none;
+        // margin-left: ;
+        // margin-right: 30%;
+        margin: 0 auto;
     }
 }
-
-@media (max-width: 1024px) {
-    .list {
-        width: 50%;
-        text-align: left;
-        padding-left: 5%;
-        margin-left: 30%;
-    }
-
-  }
