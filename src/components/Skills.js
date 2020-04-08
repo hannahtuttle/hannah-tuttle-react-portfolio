@@ -1,5 +1,5 @@
 import React from 'react'
-import './skills.scss'
+import '../styles/skills.scss'
 
 
 const Skills = () => {
@@ -11,7 +11,7 @@ const Skills = () => {
         <div className = "border_horizontal"></div>
         <h2 className = "skills_title">Skills</h2>
         <div className ="list">
-        <ul>
+        <ul className='fonts'>
             <li>Javascript</li>
             <li>HTML</li>
             <li>CSS</li>

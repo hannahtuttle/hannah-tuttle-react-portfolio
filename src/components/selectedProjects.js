@@ -1,6 +1,8 @@
 import React, { useState} from "react";
-import Modal from 'react-modal'
-import './projects.scss'
+import Modal from 'react-modal';
+import IconButton from '@material-ui/core/IconButton';
+import CloseIcon from '@material-ui/icons/Close';
+import '../styles/projects.scss'
 
 
 import projectsObject from './Projects.js'
@@ -13,16 +15,12 @@ const cont = {
 };
 
 const SelectedImage = ({
-  index,
   photo,
   margin,
-  direction,
-  top,
-  left,
-  selected
 }) => {
 
     const [isOpen, setIsOpen] = useState(false)
+    const [mouseOn, setMouseOn] = useState(false)
 
 
     function onModalClick(){
@@ -33,14 +31,35 @@ const SelectedImage = ({
         setIsOpen(false)
     }
 
+    const onMouseDown = () => {
+      setMouseOn(true)
+    }
+
+    const onMouseLeave = () => {
+      setMouseOn(false)
+    }
+
+    const imgStyle = {
+      transition: "transform .135s cubic-bezier(0.0,0.0,0.2,1),opacity linear .15s"
+    };
+    const selectedImgStyle = {
+      transform: "translateZ(0px) scale3d(0.9, 0.9, 1)",
+      transition: "transform .135s cubic-bezier(0.0,0.0,0.2,1),opacity linear .15s"
+    };
+
   return (
       <>
     <div
       style={{ margin, height: photo.height, width: photo.width, ...cont }}
       onClick = {onModalClick}
+      onMouseEnter = {onMouseDown}
+      onMouseLeave = {onMouseLeave}
     >
-<p>{photo.title}</p>
-      <img
+<p className='fonts'>{photo.title}</p>
+      <img 
+        style={
+         mouseOn ? { ...imgStyle, ...selectedImgStyle } : { ...imgStyle }
+        }
         alt={photo.title}
         {...photo}
       />
@@ -54,20 +73,26 @@ const SelectedImage = ({
           shouldCloseOnOverlayClick={true}
         >
  
-         <>
-
-         <h4>{projectsObject[photo.title].title}</h4>
+         <div className='fonts'>
+        <div style ={{'display': 'flex', 'justifyContent': 'space-between', 'alignItems': 'center'}}>
+         <h3>{projectsObject[photo.title].title}</h3>
+         <IconButton style={{'height': '90%',}}>
+        <CloseIcon onClick={onClose} />
+        </IconButton>
+        </div>
+         <div className = 'modal_design'></div>
+         <div className='modal_guts'>
         <p>{projectsObject[photo.title].description}</p>
         <p>{projectsObject[photo.title].stack}</p>
-        <p>You can veiw the project <a href={projectsObject[photo.title].hosted}>here </a> or veiw the repsoitoty <a href= {projectsObject[photo.title].gitHublink}>here</a>.</p>
+        {projectsObject[photo.title].hosted !== "" ? <p>You can veiw the project <a href={projectsObject[photo.title].hosted}>here </a> or veiw the repository <a href= {projectsObject[photo.title].gitHublink}>here</a>.</p> : <p>You can veiw the repository <a href= {projectsObject[photo.title].gitHublink}>here</a>.</p>}
         <ul>
+        <p>My constributions include:</p>
            {projectsObject[photo.title].tasks.map((task) => {
                 return <li>{task}</li>
            })} 
         </ul>
-
-         </>
-        <button onClick={onClose}>close</button>
+        </div>
+         </div>
         </Modal>
     </>
   );

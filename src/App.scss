@@ -18,36 +18,20 @@
   justify-content: space-evenly;
   outline: none;
 }
-.projects{
-  display: flex;
-  padding-left: 2%;
-  padding-right: 2%;
-}
-.project-title {
-  text-align: left;
-  padding-left: 2%;
-}
-.flexing {
-  display: flex;
-  align-content: flex-end;
-}
-.pro-description {
-  width: 50%;
-  border-width: 3px;
-  border-color: blue;
-  border-style: solid;
-}
-.bullet-points {
-  width: 50%;
-  border-width: 3px;
-  border-color: crimson;
-  border-style: solid;
-  text-align: left;
-}
 
 .footer{
   color: white;
   background-color: #1B1C1D;
   margin-top: 5%;
-  padding: 5%
+  padding: 5%;
+  font-family: 'Vollkorn', serif;
+}
+
+.fonts {
+  font-family: 'Vollkorn', serif;
+}
+
+.mouse_nav {
+  font-family: 'Vollkorn', serif;
+  color: #404040;
 }
