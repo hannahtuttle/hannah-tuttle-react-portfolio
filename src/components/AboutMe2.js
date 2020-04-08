@@ -17,7 +17,7 @@ return(
     <div className ='about_c'>
     <img className='image' src={photo} alt='Hannah Tuttle' />
     
-    <p className = 'description'>I’m a wife, a mother of twin toddlers, and an avid puzzle doer. My love of problem solving has led me to a career in web development. I’ve found that coding has both fulfills my desire to always be learning and provides a great sense of accomplishment when completing projects with team members. As a full-stack developer, I have training and experience in Javascript and Python for both front and back end. Interested in collaborating? Let’s get coffee and see how I can serve your company. </p> 
+    <p className = 'description'>I’m a wife, a mother of twin toddlers, and an avid puzzle doer. My love of problem solving has led me to a career in web development. I’ve found that coding has both fulfills my desire to always be learning and provides a great sense of accomplishment when completing projects with team members. As a full stack developer, I have training and experience in Javascript and Python for both front and back end. Interested in collaborating? Let’s get coffee and see how I can serve your company. </p> 
     </div>
     </div>
 )

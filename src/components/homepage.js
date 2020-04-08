@@ -40,8 +40,8 @@ function Home() {
       <Element name="about-1" className="element" ><AboutMe2/></Element>
       </div>
       <footer className ='footer'>
-      <p>View my work on <a href='https://github.com/hannahtuttle?tab=repositories'>Github</a>.</p>
-        <h5>Contact</h5>
+      <p><a href='https://github.com/hannahtuttle?tab=repositories'>View my work on Github</a>.</p>
+        {/* <h5>Contact</h5> */}
         <a href = 'mailto:tuttleportfolio2020@gmail.com'>Email Me</a>
        {/* <p>tuttleportfolio2020@gmail.com</p> */}
       </footer>
