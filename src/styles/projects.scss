@@ -80,7 +80,7 @@ a:hover {
     margin-top: 10%;
     margin-left: 10%;
     width: 75%;
-    // height: 85%;
+    max-height: 100vh;
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 2%;
@@ -91,18 +91,19 @@ a:hover {
     border-radius: 4px;
     color:#202020;
     font-family: 'Vollkorn', serif;
+    overflow-y: auto;
   }
 
-  .modal-guts {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px 50px 20px 20px;
-    overflow: auto;
+  // .modal-guts {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   padding: 20px 50px 20px 20px;
+  //   overflow: auto;
     
-  }
+  // }
   
 }
 
