@@ -35,3 +35,9 @@
   font-family: 'Vollkorn', serif;
   color: #404040;
 }
+
+@media (max-width: 580px){
+  .short-intro {
+    width: 90%
+  }
+}
