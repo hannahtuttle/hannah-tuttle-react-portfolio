@@ -127,7 +127,7 @@ const ModalC = ({isOpen, photo, setIsOpen}) => {
    <div className='modal_guts'>
   <p>{projectsObject[photo.title].description}</p>
   <p>{projectsObject[photo.title].stack}</p>
-  {projectsObject[photo.title].hosted !== "" ? <p>You can view the project <a href={projectsObject[photo.title].hosted}>here </a> or veiw the repository <a href= {projectsObject[photo.title].gitHublink}>here</a>.</p> : <p>You can veiw the repository <a href= {projectsObject[photo.title].gitHublink}>here</a>.</p>}
+  {projectsObject[photo.title].hosted !== "" ? <p>You can view the project <a href={projectsObject[photo.title].hosted}>here </a> or view the repository <a href= {projectsObject[photo.title].gitHublink}>here</a>.</p> : <p>You can view the repository <a href= {projectsObject[photo.title].gitHublink}>here</a>.</p>}
   <ul>
   <p>My contributions include:</p>
      {projectsObject[photo.title].tasks.map((task) => {
