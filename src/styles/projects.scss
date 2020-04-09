@@ -73,42 +73,6 @@ a:hover {
   border-top: 1px solid #1B1C1D;
   margin-bottom: 5%;
 }
-
-@media (max-width: 580px){
-  .Modal {
-    position: absolute;
-    margin-top: 10%;
-    margin-left: 10%;
-    width: 75%;
-    max-height: 100vh;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 2%;
-    background-color: whitesmoke;
-    outline: none;
-    //border: 1px solid gray;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 4px;
-    color:#202020;
-    font-family: 'Vollkorn', serif;
-    overflow-y: auto;
-  }
-
-  .ReactModal__Overlay {
-    //position: fixed;
-    // z-index: 999999;
-    // top: 0;
-    // left: 0;
-    // width: 100vw;
-    // height: 100vh;
-    // background: rgba(0, 0, 0, 0.5);
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-  }
-  
-}
-
 @media (max-width: 1024px) {
   .gallery {
     width: 90%;
@@ -132,4 +96,40 @@ a:hover {
     color:#202020;
     font-family: 'Vollkorn', serif;
   }
+}
+
+@media (max-width: 580px){
+  .Modal {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 75%;
+    max-height: 100vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    background-color: whitesmoke;
+    outline: none;
+    //border: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+    color:#202020;
+    font-family: 'Vollkorn', serif;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .ReactModal__Overlay {
+    //position: fixed;
+    // z-index: 999999;
+    // top: 0;
+    // left: 0;
+    // width: 100vw;
+    // height: 100vh;
+    // background: rgba(0, 0, 0, 0.5);
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+  }
+  
 }
