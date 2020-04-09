@@ -15,9 +15,6 @@ function App() {
     <Route exact path='/' component={Home}/>
     <Route exact path='/contactForm' component={ContactForm}/>
     <Route exact path = '/projects/:title' component={Projects}/>
-    {/* <Projects/>
-    <Skills/>
-    <ActivityGraph/> */}
     </div>
   );
 }
