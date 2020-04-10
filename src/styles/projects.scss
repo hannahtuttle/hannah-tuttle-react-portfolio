@@ -1,9 +1,10 @@
 @import '../fonts.scss';
 
 .Modal {
-    position: absolute;
-    margin-top: 10%;
-    margin-left: 22%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 50%;
     padding-left: 2%;
     padding-right: 2%;
@@ -118,19 +119,6 @@ a:hover {
     font-family: 'Vollkorn', serif;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-  }
-
-  .ReactModal__Overlay {
-    //position: fixed;
-    // z-index: 999999;
-    // top: 0;
-    // left: 0;
-    // width: 100vw;
-    // height: 100vh;
-    // background: rgba(0, 0, 0, 0.5);
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
   }
   
 }
