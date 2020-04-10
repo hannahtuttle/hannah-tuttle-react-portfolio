@@ -13,8 +13,8 @@ function App() {
     <div >
       {/* <h1>Hannah Tuttle</h1> */}
     <Route exact path='/' component={Home}/>
-    <Route exact path='/contactForm' component={ContactForm}/>
-    <Route exact path = '/projects/:title' component={Projects}/>
+    {/* <Route exact path='/contactForm' component={ContactForm}/>
+    <Route exact path = '/projects/:title' component={Projects}/> */}
     </div>
   );
 }

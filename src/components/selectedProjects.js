@@ -31,8 +31,8 @@ const SelectedImage = ({
 
     function onModalClick(){
         setIsOpen(true)
-        disable()
-        disableBodyScroll()
+        enable()
+        // disableBodyScroll()
     }
 
 
@@ -86,24 +86,24 @@ const SelectedImage = ({
       />
       <style>{`.not-selected:hover{outline:2px solid #06befa}`}</style>
     </div>
-    <ModalC isOpen ={isOpen} photo = {photo} setIsOpen = {setIsOpen}/>
+    <ModalC isOpen ={isOpen} photo = {photo} setIsOpen = {setIsOpen} />
     </div>
   );
 };
 
 const ModalC = ({isOpen, photo, setIsOpen}) => {
 
-  let targetRef = createRef();
-  let targetElement = null
+  // let targetRef = createRef();
+  // let targetElement = null
 
-  useEffect(() => {
-    targetElement = targetRef.current
-  },[])
+  // useEffect(() => {
+  //   targetElement = targetRef.current
+  // },[])
 
   function onClose(){
     setIsOpen(false)
-    enable()
-    enableBodyScroll()
+    disable()
+    // enableBodyScroll()
 }
 
   return (
@@ -113,7 +113,7 @@ const ModalC = ({isOpen, photo, setIsOpen}) => {
     onRequestClose={onClose}
     className="Modal"
     shouldCloseOnOverlayClick={true}
-    ref={targetRef}
+    // ref={targetRef}
     // onAfterOpen = {handleAfterOpen}
     // onAfterClose = {handleAfterClose}
     //overlayClassName = "ReactModal__Overlay "
@@ -122,8 +122,8 @@ const ModalC = ({isOpen, photo, setIsOpen}) => {
    <div className='fonts'>
   <div style ={{'display': 'flex', 'justifyContent': 'space-between', 'alignItems': 'center'}}>
    <h3>{projectsObject[photo.title].title}</h3>
-   <IconButton style={{'height': '90%',}}>
-  <CloseIcon onClick={onClose} />
+   <IconButton style={{'height': '90%',}} onClick={onClose}>
+  <CloseIcon/>
   </IconButton>
   </div>
    <div className = 'modal_design'></div>
