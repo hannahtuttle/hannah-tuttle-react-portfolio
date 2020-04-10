@@ -4,6 +4,7 @@ import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'bo
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import '../styles/projects.scss'
+import {enable, disable} from '../utils/scroll-lock.js'
 
 
 import projectsObject from './Projects.js'
@@ -30,6 +31,7 @@ const SelectedImage = ({
 
     function onModalClick(){
         setIsOpen(true)
+        disable()
         disableBodyScroll()
     }
 
@@ -100,6 +102,7 @@ const ModalC = ({isOpen, photo, setIsOpen}) => {
 
   function onClose(){
     setIsOpen(false)
+    enable()
     enableBodyScroll()
 }
 
