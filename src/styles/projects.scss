@@ -1,10 +1,9 @@
 @import '../fonts.scss';
 
 .Modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 22%;
     width: 50%;
     padding-left: 2%;
     padding-right: 2%;
@@ -82,7 +81,7 @@ a:hover {
   
   .Modal {
     position: absolute;
-    margin-top: 10%;
+    margin-top: 30%;
     margin-left: 10%;
     width: 75%;
     // height: 85%;
@@ -105,7 +104,7 @@ a:hover {
     margin-top: 10%;
     margin-left: 10%;
     width: 75%;
-    max-height: 80vh;
+    max-height: 70vh;
     // height: 100%+1px;
     padding-left: 2%;
     padding-right: 2%;
