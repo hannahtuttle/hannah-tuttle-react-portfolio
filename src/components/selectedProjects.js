@@ -1,6 +1,5 @@
 import React, { useState, createRef, useEffect} from "react";
 import Modal from 'react-modal';
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import '../styles/projects.scss'
@@ -16,10 +15,6 @@ const cont = {
   position: "relative"
 };
 
-let pos = {
-  position: 'relative'
-}
-
 const SelectedImage = ({
   photo,
   margin,
@@ -32,9 +27,12 @@ const SelectedImage = ({
     function onModalClick(){
         setIsOpen(true)
         enable()
-        // disableBodyScroll()
     }
 
+    function onClose(){
+      setIsOpen(false)
+      disable()
+  }
 
     const onMouseDown = () => {
       setMouseOn(true)
@@ -43,21 +41,6 @@ const SelectedImage = ({
     const onMouseLeave = () => {
       setMouseOn(false)
     }
-
-    const handleAfterOpen = () => {
-      if(isOpen){
-        let pos = {
-          position: 'absolute'}
-        }
-      }
-    
-
-    const handleAfterClose = () => {
-      if(!isOpen){
-        let pos = {
-          position: 'relative'}
-        }
-      }
     
 
     const imgStyle = {
@@ -86,37 +69,11 @@ const SelectedImage = ({
       />
       <style>{`.not-selected:hover{outline:2px solid #06befa}`}</style>
     </div>
-    <ModalC isOpen ={isOpen} photo = {photo} setIsOpen = {setIsOpen} />
-    </div>
-  );
-};
-
-const ModalC = ({isOpen, photo, setIsOpen}) => {
-
-  // let targetRef = createRef();
-  // let targetElement = null
-
-  // useEffect(() => {
-  //   targetElement = targetRef.current
-  // },[])
-
-  function onClose(){
-    setIsOpen(false)
-    disable()
-    // enableBodyScroll()
-}
-
-  return (
     <Modal
     isOpen={isOpen}
-  //   onAfterOpen={afterOpenModal}
     onRequestClose={onClose}
     className="Modal"
     shouldCloseOnOverlayClick={true}
-    // ref={targetRef}
-    // onAfterOpen = {handleAfterOpen}
-    // onAfterClose = {handleAfterClose}
-    //overlayClassName = "ReactModal__Overlay "
   >
 
    <div className='fonts'>
@@ -140,7 +97,9 @@ const ModalC = ({isOpen, photo, setIsOpen}) => {
   </div>
    </div>
   </Modal>
-  )
-}
+    </div>
+  );
+};
+
 
 export default SelectedImage;
