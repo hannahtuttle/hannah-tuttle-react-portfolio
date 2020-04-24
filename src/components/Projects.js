@@ -23,7 +23,7 @@ const projectsObject = {
         description: 'GUIDR is an app for outdoor guides to save their trips and allow others to view the trips that they have guided.',
         stack: 'Built with a React front end and a Node/Express with Knex on the back end.',
         gitHublink: 'https://github.com/guidr-project/GUIDR-Backend',
-        hosted: 'https://guider-app.madisonmckown.now.sh/homepage',
+        hosted: 'https://guidr-bw.netlify.app/',
         tasks: ['Setting the backend with PostgreSQL and Node/Express.', 'Set up all the end points, middleware and SQL query functions.']
 }
 }
