@@ -25,14 +25,14 @@ function Home() {
         <div className='landingPage'>
         {/* <h1>Hannah Tuttle</h1> */}
       <AboutMe/>
+      <Element name="nav-1" className="element">
       <div className='navBar'>
-
-      <div onMouseEnter = {onMouseDown} onMouseLeave = {onMouseLeave}><Link activeClass="active" className="projects-1" to="projects-1" spy={true} smooth={true} duration={500} >{mouseOn ? <h4 style={{'color': '#404040'}} className = 'fonts'>Projects</h4>:<h4 className = 'fonts'>Projects</h4>}</Link></div>
+      <div><Link activeClass="active" className="projects-1" to="projects-1" spy={true} smooth={true} duration={500} ><h4 className = 'fonts'>Projects</h4></Link></div>
       {/* <div><h4>About Me</h4></div> */}
       <div><Link activeClass="active" className="skills-1" to="skills-1" spy={true} smooth={true} duration={500} ><h4 className = 'fonts'>Skills</h4></Link></div>
       <div><Link activeClass="active" className="about-1" to="about-1" spy={true} smooth={true} duration={500} ><h4 className = 'fonts'>About Me</h4></Link></div>
-      {/* <div><h4 className = 'fonts'>Contact</h4></div> */}
       </div>
+      </Element>
       {/* <Projects/> */}
       {/* <p>________________________________________________________________________________________________</p> */}
       <Element name="projects-1" className="element" ><ProjectGallery/></Element>
